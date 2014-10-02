@@ -35,21 +35,47 @@ h4 {font-size: 1.2em;}
 
 small, .font_small {font-size: 0.833em;}
 
+a {
+	color: red;
+}
+a:hover {
+	text-decoration: none;
+	color: orange;
+}
+
 /* Layout */
 .container {
 	max-width: 1000px; /* max-width will scale to the browser, while just `width` will always be the value */
 	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */
 	margin-right: auto;
 }
+.site-header {
+	padding: 2em 0;
+}
 .hero-img {
 	max-width: 100%; /* max-width will scale to the browser or container */
 }
 .site-title { 
 	float: left;
+	font-weight: bold;
+	font-size: 1.25em;
+	color: tomato;
+	text-decoration: none;
+}
+.site-title:hover {
+	background: tomato;
+	color: white;
 }
 
 .navbar {
-	float: left;
+	float: right;
+}
+
+.site-footer {
+	margin-top: 3em;
+	background: black;
+	color: white;
+	padding: 2em 0;
 }
 
 /* Navigation */
@@ -61,13 +87,28 @@ small, .font_small {font-size: 0.833em;}
 .header-nav li {
 	display: inline-block;
 }
+.nav-link {
+	background: #ddd;
+	padding: 0.25em 0.75em;
+	text-decoration: none;
+	color: black;
+	margin: 0 0.25em;
+	border-radius: 1em;
+}
+.nav-link:hover {
+	background: lightblue;
+}
 
 /* Columns */
+
+.content-columns {
+	text-align: center;
+}
 
 .col {
 	float: left;
 	width: 33.33%;
-	border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
 }
 
 
