@@ -4,11 +4,11 @@
 
 
 body {
-  font-family: 'Open Sans', serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333;
-  font-size: 16px;
+	font-family: 'Open Sans', serif;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #333;
+	font-size: 16px;
 }
 
 p {
@@ -17,14 +17,14 @@ p {
 }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
+	margin: 1.414em 0 0.5em;
+	font-weight: inherit;
+	line-height: 1.2;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 2.074em;
+	margin-top: 0;
+	font-size: 2.074em;
 }
 
 h2 {font-size: 1.728em;}
@@ -49,6 +49,12 @@ a:hover {
 	margin-left: auto; /* or margin: 0 auto; -- both will center a block element on a page or in a container */
 	margin-right: auto;
 }
+@media (max-width: 1050px){
+	.container {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
 .site-header {
 	padding: 2em 0;
 }
@@ -56,7 +62,6 @@ a:hover {
 	max-width: 100%; /* max-width will scale to the browser or container */
 }
 .site-title { 
-	float: left;
 	font-weight: bold;
 	font-size: 1.25em;
 	color: tomato;
@@ -67,9 +72,7 @@ a:hover {
 	color: white;
 }
 
-.navbar {
-	float: right;
-}
+
 
 .site-footer {
 	margin-top: 3em;
@@ -85,7 +88,21 @@ a:hover {
 	padding: 0;
 }
 .header-nav li {
-	display: inline-block;
+	margin-bottom: 0.25em;
+}
+@media (min-width: 630px){
+	.header-nav li {
+		display: inline-block;
+	}
+	.navbar {
+		float: right;
+	}
+	.site-title {
+		float: left;
+	}
+	.nav-link {
+		border-radius: 1em;
+	}
 }
 .nav-link {
 	background: #ddd;
@@ -93,7 +110,8 @@ a:hover {
 	text-decoration: none;
 	color: black;
 	margin: 0 0.25em;
-	border-radius: 1em;
+	
+	display: block;
 }
 .nav-link:hover {
 	background: lightblue;
@@ -101,14 +119,15 @@ a:hover {
 
 /* Columns */
 
-.content-columns {
-	text-align: center;
-}
 
-.col {
-	float: left;
-	width: 33.33%;
-	/*border: 1px solid #ddd;*/
+@media (min-width: 630px){
+	.content-columns {
+		text-align: center;
+	}
+	.col {
+		float: left;
+		width: 33.33%;
+	}
 }
 
 
@@ -116,13 +135,13 @@ a:hover {
 
 .cf:before,
 .cf:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }

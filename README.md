@@ -13,3 +13,8 @@ As we learn new skills and techniques, we will build a portfolio blog.
 * 2014-09-18 [Typography](http://iinf362.com/week-4/typography/)
   - from index.html created default-page.html
   - rolled in web type styles based on lecture
+* 2014-10-02 [Bootcamp III](http://iinf362.com/week-6/bootcamp/)
+  - adds navigation styles
+  - adds footer styles
+* 2014-10-16 [RWD](http://iinf362.com/week-8/rwd-2/)
+  - adds media queries
